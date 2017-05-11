@@ -18,7 +18,7 @@ let num = prompt("Введите значение до 99")
 let i = 0;
 for (let arr of sortArr){
     if (i < num){
-        console.log(arr);
+        console.log(` ID : ${arr.id} ; Страна : ${arr.country} ; Город : ${arr.metropolitan} ; Численность : ${arr.population}`);
         i++;
     }
 }
