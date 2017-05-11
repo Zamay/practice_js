@@ -13,10 +13,11 @@ let sortArr = data.sort(function (a, b) {
     return (popA > popB) ? -1 : 1;
 });
 
-// debugger
+let num = prompt("Введите значение до 99")
+
 let i = 0;
 for (let arr of sortArr){
-    if (i < 10){
+    if (i < num){
         console.log(arr);
         i++;
     }
