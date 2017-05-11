@@ -7,19 +7,16 @@ jsonFile.open('GET', 'https://gist.githubusercontent.com/fayvlad/f89533efa137646
 jsonFile.send();
 var data = JSON.parse(jsonFile.responseText);
 
-    // data.sort(function (a, b) {  // так или ...
 let sortArr = data.sort(function (a, b) {
     var popA = a.population, popB = b.population;
     return (popA > popB) ? -1 : 1;
 });
 
-let num = prompt("Введите значение до 99")
+let num = prompt("Введите значение до 99");
 
-let i = 0;
-for (let arr of sortArr){
-    if (i < num){
-        console.log(` ID : ${arr.id} ; Страна : ${arr.country} ; Город : ${arr.metropolitan} ; Численность : ${arr.population}`);
-        i++;
-    }
+let numSortArr =  sortArr.slice(0, num);
+
+for (let arr of numSortArr){
+    console.log(` ID : ${arr.id} ; Страна : ${arr.country} ; Город : ${arr.metropolitan} ; Численность : ${arr.population}`);
 }
 
