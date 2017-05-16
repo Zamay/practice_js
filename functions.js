@@ -1,5 +1,8 @@
 /**
  * Created by zamaj on 12.05.2017.
+ *
+ *  14 и с 19
+ *
  */
 
 // 1
@@ -26,7 +29,6 @@ function splitElements(arr) {
     for (let i = 1; i <= arr.length; i++) {
         const lettersToPush = arr.slice(0, i).join('');
         temp.push(lettersToPush);
-
     }
 
     return temp;
