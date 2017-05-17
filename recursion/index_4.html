@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+
+        let sum = 0;
+        function sumArray (arr) {
+
+            if (arr.length == 0){
+                return -1;
+            }else {
+                sum += arr.shift();
+            }
+            sumArray (arr);
+            return sum;
+        }
+        console.log(sumArray ([1,2,3,4,5,6]))
+        // /---------------------- -------------------/
+
+        function recur(x) {
+            return x.length == 1 ? x[0] : x[0] + recur(x.slice(1))
+        }
+        console.log(recur([1, 2, 3, 4, 5, 6]));
+
+    </script>
+
+</head>
+<body>
+
+<p>Write a JavaScript program to compute the sum of an array of integers. </p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            padding-top: 20px;
+            line-height: 25px;
+        }
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+
+
+    <script>
+
+    function BubbleSort(A)
+    {
+        debugger
+
+        var n = A.length;
+        for (var i = 0; i < n-1; i++) {
+            for (var j = 0; j < n-1-i; j++) {
+                if (A[j+1] < A[j]) {
+                    var t = A[j+1]; A[j+1] = A[j]; A[j] = t; }
+            }
+        }
+        return A;
+    }
+    console.log(BubbleSort([3,6,1,4,7,2,5,8,1]));
+    // /-------------------------------/
+    function bubbleSort(array) {
+        return array.sort(function(a, b){
+            return a - b;
+        });
+    }
+
+    </script>
+
+</head>
+<body>
+
+<p>Write a Bubble Sort algorithm in JavaScript </p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+</body>
+</html>

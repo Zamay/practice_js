@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+
+        function Setinterval() {
+            this.times = function () {
+                setInterval(function () {
+                    var d = new Date();
+                    var dat = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+                    console.log(dat + " \n");
+                }, 1000);
+            };
+
+        }
+        var date = new Setinterval();
+        console.log(date.times());
+
+    </script>
+
+</head>
+<body>
+
+<p>Write a JavaScript program to create a Clock. </p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+</body>
+</html>

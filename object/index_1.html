@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+
+        let student = {
+            name : "David Rayy",
+            sclass : "VI",
+            rollno : 12
+        };
+        //самый простой способ.
+        document.write(` 1й вариант - ${Object.keys(student)} <br>`);
+        console.log(`1й вариант - ${Object.keys(student)}`)
+
+        // /------------ мой -------/
+        function foo(obj) {
+            let arr = [];
+            for (let key in obj){
+                arr.push(key);
+            }
+            return (arr);
+        }
+        document.write(`2й вариант -  ${foo(student)} <br>`);
+        console.log(`2й вариант - ${foo(student)}`)
+        // / ------------ НеМОй --------------/
+        function foo1(obj) {
+            return Object.getOwnPropertyNames(obj);
+        }
+
+        document.write(`3й вариант - ${foo1(student)} <br>`);
+        console.log(`3й вариант - ${foo1(student)}`)
+
+    </script>
+
+</head>
+<body>
+
+<p> Write a JavaScript program to list the properties of a JavaScript object</p>
+
+</body>
+</html>

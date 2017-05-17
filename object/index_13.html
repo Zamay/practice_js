@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+
+        function Proto(name) {
+            this.name = name;
+
+            this.arr = function(){
+                let arr = [];
+                for (let key in user) arr.push(key);
+                return arr;
+            }
+        }
+
+        Proto.prototype.age = 23;
+        Proto.prototype.age2 = 23;
+        Proto.prototype.age3 = 23;
+
+        let user = new Proto("Misha");
+
+        console.log( user.arr());
+
+    </script>
+
+</head>
+<body>
+
+<p>Write a JavaScript function to retrieve all the names of object's own and inherited properties </p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+</body>
+</html>

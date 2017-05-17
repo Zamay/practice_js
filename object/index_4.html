@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            padding-top: 20px;
+            line-height: 25px;
+        }
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+
+        let library = [
+            {
+                title: 'Bill Gates',
+                author: 'The Road Ahead',
+                readingStatus: true
+            },
+            {
+                title: 'Steve Jobs',
+                author: 'Walter Isaacson',
+                readingStatus: true
+            },
+            {
+                title: 'Mockingjay: The Final Book of The Hunger Games',
+                author: 'Suzanne Collins',
+                readingStatus: false
+            }
+        ];
+
+        for (let key of library){
+            if (key.readingStatus){
+                console.log(`Вы читаете ${key.author}`)
+            } else {
+                console.log(`Вы не читали ${key.author}`)
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+
+<p>Write a JavaScript program to display the reading status (i.e. display book name, author name and reading status) of the following books.</p>
+
+</body>
+</html>

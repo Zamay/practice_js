@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+
+        var gcd = function(a, b) {
+            debugger
+            if ( ! b) {
+                return a;
+            }
+
+            return gcd(b, a % b);
+        };
+        console.log(gcd(2154, 378));
+
+    </script>
+
+</head>
+<body>
+
+<p> Write a JavaScript program to find the greatest common divisor (gcd) of two positive numbers. </p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+</body>
+</html>

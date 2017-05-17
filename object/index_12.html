@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+
+
+        function parse_url(url){
+            let objParams;
+
+            var a = document.createElement('a');
+            a.href = url;
+
+            objParams = {
+                href: a.href,
+                protocol: a.protocol,
+                hostname: a.hostname,
+                port: a.port,
+                pathname: a.pathname,
+                search: a.search,
+                hash: a.hash
+            };
+
+            for(let key in objParams) {
+                if(objParams[key] == undefined) {
+                    objParams[key] = '';
+                }
+            }
+
+            return objParams;
+        }
+
+    </script>
+
+</head>
+<body>
+
+<p>Write a JavaScript function to parse an URL. </p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+</body>
+</html>

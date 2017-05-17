@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+
+        var library = [
+            {
+                title: 'The Road Ahead',
+                author: 'Bill Gates',
+                libraryID: 1254
+            },
+            {
+                title: 'Walter Isaacson',
+                author: 'Steve Jobs',
+                libraryID: 4264
+            },
+            {
+                title: 'Mockingjay: The Final Book of The Hunger Games',
+                author: 'Suzanne Collins',
+                libraryID: 3245
+            }
+        ];
+
+        function SortObject() {
+            this.sortObj = function (arr) {
+                for (let obj of arr) {
+                    Object.keys(obj).sort();
+                }
+                return arr
+            }
+        }
+        let user = new SortObject();
+
+        console.log(user.sortObj(library))
+
+        // /-------------- Аналог ----------------/
+        console.log(library.sort());
+
+
+    </script>
+
+</head>
+<body>
+
+<p>Write a JavaScript program to sort an array of JavaScript objects </p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+</body>
+</html>

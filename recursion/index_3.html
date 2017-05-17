@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+
+        let arr = [];
+        function range(start, end) {
+
+            if (start < end - 1){
+                arr.push(start + 1);
+                range(start+1, end)
+            }
+
+            return arr;
+        }
+        console.log(range(2, 4));
+
+        // /-------------- ---------------------/
+        function recur(x,y) {
+            return x==y-2 ? y-1 : [x+1].concat(recur(x+1,y));
+        }
+        console.log(recur(2,9));
+
+    </script>
+
+</head>
+<body>
+
+<p>Write a JavaScript program to get the integers in range (x, y). </p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+</body>
+</html>

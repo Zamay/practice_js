@@ -108,7 +108,7 @@ function BubbleSort(A)
                 var t = A[j+1]; A[j+1] = A[j]; A[j] = t; }
             }
         }
-    return A;    // На выходе сортированный по возрастанию массив A.
+    return A;
 }
 console.log(BubbleSort([3,6,1,4,7,2,5,8,1]))
 // /-------------------------------/

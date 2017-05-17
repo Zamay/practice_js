@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+
+        function Calculate() {
+            this.perimeter = function (r) {
+                return 2 * 3.14 * r;
+            };
+            this.area = function (r) {
+                return Math.PI * r * r;
+            }
+        }
+
+        let a = new Calculate();
+
+        console.log(a.perimeter(4));
+        console.log(a.area(4));
+
+    </script>
+
+</head>
+<body>
+
+<p>Write a JavaScript program to calculate the area and perimeter of a circle. </p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+</body>
+</html>
