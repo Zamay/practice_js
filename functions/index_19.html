@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+
+        let arr = [1,13,41,12,43,15];
+
+        function foo(arr, n) {
+            let arr1 = [];
+            for (let key in arr){
+                if ( n < arr[key]) {
+                    arr1.push(arr[key])
+                }
+            }
+            return arr1;
+        }
+        console.log(foo(arr , 20))
+
+    </script>
+
+</head>
+<body>
+
+<p> Write a JavaScript function that returns array elements larger than a number.</p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+</body>
+</html>

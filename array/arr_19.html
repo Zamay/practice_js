@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+
+        let arr1 = [1,2,3,4,5,6,7,8];
+        let arr2 = [8,7,6,5,4,3,2,1];
+
+        function foo(arr1 , arr2) {
+
+            let arr = [],
+                a = arr1.length,
+                b = arr2.length;
+
+            if( a > b){
+                for (let key in arr2){
+                    arr.push(arr1[key] + arr2[key])
+                }
+                arr.push(arr1.slice((b - a))[0])
+            }
+            if( a < b){
+                for (let key in arr1){
+                    arr.push(arr1[key] + arr2[key])
+                }
+                arr.push(arr2.slice((a - b))[0])
+            }
+            if( a == b){
+                for (let key in arr1){
+                    arr.push(arr1[key] + arr2[key])
+                }
+            }
+            return arr
+        }
+        console.log( foo(arr1 ,arr2))
+
+        // /----------------------------/
+//        arr1 = [1,0,2,3,4];
+//        arr2 = [3,5,6,7,8,13];
+//        var arr = [];
+//        var max = Math.max(arr1.length,arr2.length);
+//        for
+//        ( var i = 0; i < max; i++) {
+//            if( arr1.length < arr2.length ) arr1.push(0);
+//            else arr2.push(0);
+//            arr.push(arr1[i] + arr2[i]);
+//        }
+//        console.log(arr);
+
+    </script>
+
+</head>
+<body>
+
+<p>There are two arrays with individual values, write a JavaScript program to compute the sum of each individual index value from the given arrays. </p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+</body>
+</html>

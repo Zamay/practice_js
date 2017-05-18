@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+
+        let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+        function foo(n){
+            let arr = str.split(""),
+                arr1 = [];
+
+            for ( let i = 0; i < n; i++){
+                let random = Math.floor(Math.random() * arr.length) + 1;
+                arr1.push(arr[random])
+            }
+
+            return arr1.join("");
+        }
+        console.log(foo(14));
+
+    </script>
+
+</head>
+<body>
+
+<p>Write a JavaScript function that generates a string id (specified length) of random characters. </p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+</body>
+</html>

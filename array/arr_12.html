@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+
+        var arr = [ 1, 2 , 3 , 4 , 5 , 6 , 7, 8 ,9] ;
+
+        var sum = arr.reduce(function(sum,num) { return num + sum });
+        var product = arr.reduce(function(sum,num) { return num * sum });
+
+        console.log(" sum : "+sum +"\n " + "product : " + product);
+//        var arr = [1, 2, 3, 4, 5, 6];
+//
+//        function sum(arr) {
+//            let a = [];
+//            let sum1 = 0;
+//            for ( let v in arr){
+//                sum1 += arr[v];
+//            }
+//            a.push(sum1)
+//            return a[0];
+//        }
+//        console.log( sum(arr))
+
+    </script>
+
+</head>
+<body>
+
+<p>Write a JavaScript program to compute the sum and product of an array of integers </p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+</body>
+</html>

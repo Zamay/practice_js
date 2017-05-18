@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+
+
+//        let arr = [1 ,2, 3, 4, 5, 6, 7, 8]
+//        console.log(arr)
+//
+//        function foo(arr){
+//            for ( let i = 0, l = arr.length-1; i < l; i++){
+//                let pandom = Math.floor(Math.random() * l) + 1;
+//                let buf = arr[i];
+//                arr[i] = arr[pandom];
+//                arr[pandom] = buf;
+//            }
+//            return (arr)
+//        }
+//        console.log(foo(arr));
+
+        // /---------------------------------/
+        //перемешать массив
+
+        var arr = [3, 6, 1, 4, 8, 0, 9, 2, 5, 7, 'a', 'b'];
+
+        function compareRandom(a, b) {
+            return Math.random() - 0.5;
+        }
+
+        console.log(arr); //Массив до
+
+        arr.sort(compareRandom);
+
+        console.log(arr); //массив после
+    </script>
+
+</head>
+<body>
+
+<p>Write a JavaScript program to shuffle an array. </p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+
+        let items = [1, 2, 3, 4, 5, 7, 8, 9];
+
+        function foo(arr, n) {
+            for (let i =0, l = arr.length-1; i < l; i++){
+                if ( arr[i] == n){
+                    return i;
+                }
+            }
+        }
+        console.log(foo(items, 3));
+
+    </script>
+
+</head>
+<body>
+
+<p> Write a JavaScript program to perform a binary search.</p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+</body>
+</html>

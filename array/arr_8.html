@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+
+        function foo(arr) {
+            let obj = {};
+            arr.map(function (sum) {
+                obj[sum] = !obj[sum] ? 1 : obj[sum] + 1
+            });
+            console.log(obj);
+
+            // sort ...
+        }
+    foo( [1, 2, 4, 2, 1, 4, 2, 5, 6, 3, 1] )
+
+    </script>
+
+</head>
+<body>
+
+<p> </p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+</body>
+</html>

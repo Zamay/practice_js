@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+        .wrapper{
+            width: 80%;
+        }
+        input[type='button']{
+            width: 50px;
+            height: 20px;
+        }
+    </style>
+
+    <script>
+
+        function add() {
+            let t2 = document.getElementById("text1"),
+                out = document.getElementById('count'),
+                text = t2.value;
+            out.append(text);
+            t2.value = " "
+        }
+
+    </script>
+
+</head>
+<body>
+
+<p>Write a JavaScript program to add items in an blank array and display the items. </p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+
+<div class="wrapper">
+    <input type="text" id="text1"></input>
+    <input type="button" id="button1" value="Add" onclick="add();"></input>
+    <div class="count" id="count">
+
+    </div>
+</div>
+
+
+</body>
+</html>

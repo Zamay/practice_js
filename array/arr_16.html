@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+
+        //1996   непарная и 2 и 6
+        //2000   парная 0 и 4 и 8
+        //2004   -----
+        //2008    % 4
+        //2012
+        //2016
+        //2020
+
+        // 1 n % 2 === 0
+        // 2
+
+        function foo(start, end) {
+            let arr = [];
+            for ( let i = start ; i <= end; i++){
+                if ((i % 4 === 0 && i % 400 === 0)|| (i % 4 === 0 && i % 100 !== 0)){
+                    arr.push(i);
+                }
+            }
+            return arr;
+        }
+        console.log(foo(2000, 2016))
+
+    </script>
+
+</head>
+<body>
+
+<p>Find the leap years in a given range of years. </p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+</body>
+</html>

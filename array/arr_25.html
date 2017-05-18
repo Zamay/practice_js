@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+
+        var library = [
+            { author: 'Bill Gates', title: 'The Road Ahead', libraryID: 1254},
+            { author: 'Steve Jobs', title: 'Walter Isaacson', libraryID: 4264},
+            { author: 'Suzanne Collins', title: 'Mockingjay: The Final Book of The Hunger Games', libraryID: 3245}
+        ];
+
+        console.log(library.sort((x, y) =>  x.libraryID - y.libraryID));
+
+    </script>
+
+</head>
+<body>
+
+<p> </p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+</body>
+</html>

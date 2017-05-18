@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+//        let arr = [11,1,1,1,2,3,4,5,4,3,6,43,2,7,7,4,3,2,4,5]
+//
+//        function foo(arr) {
+//            let arr1 = [],
+//                arr2 = [];
+//            for (let key in arr){
+//                if ( arr1.includes(arr[key])){
+//                    if (!arr2.includes(arr[key])){
+//                        arr2.push(arr[key]);
+//                        console.log(arr2)
+//                    }
+//                } else {
+//                    arr1[key] = arr[key];
+//                }
+//            }
+//        }
+//        foo(arr);
+        // /-----------------------------------/
+        const array1 = [1, 2, 3, 100, 2, 1, 10, 17, 17, 21, 3];
+
+        function findDup(arr) {
+            const dup = [];
+            for (var i = 0; i < arr.length; i++) {
+                for (var j = i + 1; j < arr.length; j++) {
+                    if (arr[i] === arr[j] && dup.indexOf(arr[j]) === -1) {
+                        dup.push(arr[j]);
+
+                    }
+                }
+            }
+            return dup;
+        }
+
+        console.log(findDup(array1));
+
+    </script>
+
+</head>
+<body>
+
+<p>Write a JavaScript program to find duplicate values in a JavaScript array. </p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+</body>
+</html>

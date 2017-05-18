@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+
+//        let str = 'abacddbec';
+//
+//        function foo(srt) {
+////            debugger
+//            let arr = srt.split(''),
+//                arr1 = {};
+//            for (let i =0, l = arr.length; i < l; i++){
+//                arr1[arr[i]] = arr1[arr[i]] ?  arr1[arr[i]] + 1 : 1;
+//            }
+//            console.log(arr1);
+//
+//            for(var k in arr1){
+//                if(arr1[k] === 1) return k;
+//            }
+//
+//        }
+//
+//        console.log(foo(str));
+        // /----------------------------/
+
+        function firstNotRepeated(str) {
+            for (let i = 0; i < str.length; i++) {
+                const count = str.split(str[i]).length - 1;
+                if (count === 1) return str[i];
+            }
+        }
+        console.log(firstNotRepeated('abacddbec'));
+
+    </script>
+
+</head>
+<body>
+
+<p> </p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+</body>
+</html>

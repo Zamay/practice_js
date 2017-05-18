@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+        
+        function addStudent(id, refreshCallback)
+        {
+            refreshCallback();
+        }
+
+        function refreshStudentList() {
+            console.log('Hello');
+        }
+
+        addStudent(1, refreshStudentList);
+
+    </script>
+
+</head>
+<body>
+
+<p>Write a JavaScript program to pass a 'JavaScript function' as parameter. </p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+</body>
+</html>
