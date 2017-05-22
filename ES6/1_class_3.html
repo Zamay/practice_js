@@ -33,12 +33,8 @@
                 return  verb || "says";
             }
 
-            set verb(verb){
-                verb;
-            }
-
             speak(text) {
-                console.log(this.name + " " + this.verb + " '" + text + "'")
+                console.log(this.name + " " + verb() + " '" + text + "'")
             }
         }
 
