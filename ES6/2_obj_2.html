@@ -22,25 +22,19 @@
 
     <script>
 
-        function startNode(type, value, options = 0) {
+        function startNode(type, value, options) {
             return {
                 type,
                 value,
-                options,
+                options
 
-                sourceProperty(){
-                    this.type = type;
-                },
-                sourceValue(){
-                    this.value = value;
-                },
-                sourceOption(){
-                    this.options = options
-                }
             }
         }
 
-        console.log(startNode("Identifier", "foo"))
+        console.log(startNode("Identifier", "foo", {
+            sourceProperty: "src",
+            sourceValue: "bar.js"
+        }))
         // → {type: "Identifier",
         //    value: "foo",
         //    src: "bar.js"}
@@ -50,7 +44,7 @@
 </head>
 <body>
 
-<p></p>
+<p>Fill in the startNode function using a single object literal. The function should return an object with type and value properties containing the value of the arguments by those names, and a third property, named by the sourceProperty option, set to the value of the sourceValue option.</p>
 
 <p>СМОТРИ В КОНСОЛЕ</p>
 

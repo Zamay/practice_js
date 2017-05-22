@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+
+        const inventory = [
+            {type:   "machine", value: 5000},
+            {type:   "machine", value:  650},
+            {type:      "duck", value:   10},
+            {type: "furniture", value: 1200},
+            {type:   "machine", value:   77}
+        ];
+
+        let totalMachineValue = inventory.reduce(function (prev, curr, i) {
+            return (curr.type == 'machine')? prev += curr.value : prev += 0 ;
+        }, 0);
+
+        console.log(totalMachineValue);
+
+    </script>
+
+</head>
+<body>
+
+<p>Write an expression using higher-order array methods (say, filter and reduce) to compute the total value of the machines in the inventory array.</p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+</body>
+</html>

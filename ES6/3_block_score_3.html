@@ -22,14 +22,15 @@
 
     <script>
 
-
+        class Something {}
+        let s = new Something() //Вызов класса происходит раньше, чем обьявление его.
 
     </script>
 
 </head>
 <body>
 
-<p></p>
+<p>This code produces an error. So apparently, unlike functions, classes are not hoisted to the top of their scope. (They are block-scoped.)</p>
 
 <p>СМОТРИ В КОНСОЛЕ</p>
 

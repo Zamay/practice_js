@@ -22,14 +22,23 @@
 
     <script>
 
+        var ids = {
+            next: 0,
+            get() {
+                return ids.next++;
+            }
+        }
 
+        console.log(ids.get())
+        // → 0
+        console.log(ids.get())
 
     </script>
 
 </head>
 <body>
 
-<p></p>
+<p>Add a get method to the ids object, which returns the next id and increments its next counter. Use the short method syntax.</p>
 
 <p>СМОТРИ В КОНСОЛЕ</p>
 
