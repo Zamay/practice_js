@@ -22,18 +22,32 @@
 
     <script>
 
-        function foo(arr) {
-            return arr.join(', ');
+        var a = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]];
 
+        for (let arr in a){
+            let arr1 = a[arr];
+            console.log(`row ${arr}`)
+            for (let a in arr1){
+                console.log(arr1[a]);
+            }
         }
-        console.log( foo([1,2,3,4]))
+        // /---------------------------------/
+//        function x(a) {
+//            a.map(e => {
+//                e.map(e => {
+//                    console.log(e);
+//                });
+//            });
+//        }
+//
+//        x([[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]]);
 
     </script>
 
 </head>
 <body>
 
-<p> </p>
+<p>Write a JavaScript program which prints the elements of the following array. </p>
 
 <p>СМОТРИ В КОНСОЛЕ</p>
 

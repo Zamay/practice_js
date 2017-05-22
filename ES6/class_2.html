@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+
+        class Speaker {
+
+            constructor(name, verb){
+                this.name = name;
+                this.verb = verb || "says";
+            }
+
+            speak(text) {
+                console.log(this.name + " " + this.verb + " '" + text + "'")
+            }
+        }
+
+        class Shouter extends Speaker {
+
+            constructor(name){
+                super(name, "shouts")
+            }
+
+            speak(text){
+                super.speak(text.toUpperCase());
+            }
+        }
+
+        new Shouter("Dr. Loudmouth").speak("hello there");
+
+
+    </script>
+
+</head>
+<body>
+
+<p>Rewrite these two object types to use the class keyword, instead of direct prototype manipulation. </p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+</body>
+</html>

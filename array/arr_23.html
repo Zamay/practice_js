@@ -22,7 +22,26 @@
 
     <script>
 
-        //подсчет количества вхождений символов
+        function difference(arr1,arr2) {
+            var arr = [];
+            var count = 0;
+            var n = arr1.toString().split(",").map(function(num) { return +num});
+            var x = arr2.toString().split(",").map(function(num) { return +num});
+            var sum = n.concat(x);
+            for( var i = 0; i < sum.length; i ++) {
+                count = 0;
+                for( var j = 0; j < sum.length; j ++) {
+                    if(sum[i] === sum[j]) count += 1;
+
+                }
+                if(count < 2 ) arr.push(sum[i]);
+            }
+
+            return arr;
+        }
+        console.log(difference([1, 2, 3], [100, 2, 1, 10]));
+        console.log(difference([1, 2, 3, 4, 5], [1, [2], [3, [[4]]],[5,6]]));
+        console.log(difference([1, 2, 3], [100, 2, 1, 10]));
 
 
     </script>
@@ -30,7 +49,7 @@
 </head>
 <body>
 
-<p></p>
+<p>Write a JavaScript function to find the difference of two arrays.</p>
 
 <p>СМОТРИ В КОНСОЛЕ</p>
 

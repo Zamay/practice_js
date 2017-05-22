@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+
+        function startNode(type, value, options = 0) {
+            return {
+                type,
+                value,
+                options,
+
+                sourceProperty(){
+                    this.type = type;
+                },
+                sourceValue(){
+                    this.value = value;
+                },
+                sourceOption(){
+                    this.options = options
+                }
+            }
+        }
+
+        console.log(startNode("Identifier", "foo"))
+        // → {type: "Identifier",
+        //    value: "foo",
+        //    src: "bar.js"}
+
+    </script>
+
+</head>
+<body>
+
+<p></p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+</body>
+</html>

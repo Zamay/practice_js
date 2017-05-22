@@ -22,18 +22,28 @@
 
     <script>
 
-        function foo(arr) {
-            return arr.join(', ');
-
+        function sum_sqr2(array) {
+            return array.reduce((prev, curr) => prev + Math.pow(curr, 2))
         }
-        console.log( foo([1,2,3,4]))
+        console.log(sum_sqr2([1, 4, 3, 1, 5]));
+
+        // /-----------------------------/
+//        function sum_sq(array) {
+//            var sum = 0,
+//                i = array.length;
+//            while (i--)
+//                sum += Math.pow(array[i], 2);
+//            return sum;
+//        }
+//
+//        console.log(sum_sq([0,1,2,3,4]));
 
     </script>
 
 </head>
 <body>
 
-<p> </p>
+<p>Write a JavaScript program to find the sum of squares of a numeric vector.</p>
 
 <p>СМОТРИ В КОНСОЛЕ</p>
 

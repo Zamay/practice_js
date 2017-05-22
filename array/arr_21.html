@@ -22,14 +22,19 @@
 
     <script>
 
+        function flatten(arr) {
+            debugger
+            return arr.toString().split(",").map(function (num) { return +num });
 
+        }
+        console.log(flatten([1, [-2], [3, [[4]]],[5,6]], true));
 
     </script>
 
 </head>
 <body>
 
-<p></p>
+<p>Write a JavaScript program to flatten a nested (any depth) array. If you pass shallow, the array will only be flattened a single level.</p>
 
 <p>СМОТРИ В КОНСОЛЕ</p>
 
