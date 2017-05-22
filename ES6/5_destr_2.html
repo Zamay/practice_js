@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+
+        function lastIndexOf() {
+
+            let [arr, elt, start= [arr.length]] = arguments;
+
+            for (let i = start ; i >= 0; i--)
+                if (arr[i] === elt) return i
+            return -1
+        }
+
+        console.log(lastIndexOf([1, 2, 1, 2], 2))
+
+    </script>
+
+</head>
+<body>
+
+<p>This function uses destructuring for argument parsing. But it has a problem: it crashes when the caller passes an option object without an enable property. Since all options have defaults, we'd like to not crash in this case. Can you think of a clean way to fix this problem?</p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+</body>
+</html>

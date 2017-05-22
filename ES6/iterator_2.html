@@ -40,7 +40,7 @@
             return {
                 next() {
                     var a = iter.next().value;
-                    var value = (a  > n)? undefined : value = a;
+                    var value = ( a >= n)? undefined : a;
                     var done = (value == undefined);
 
                     return {value, done}

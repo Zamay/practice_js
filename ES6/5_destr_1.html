@@ -22,14 +22,23 @@
 
     <script>
 
-        class Point {
-            constructor(x, y) {
-                this.x = x, this.y = y
-            }
-            add(other) {
-                return new Point(this.x + other.x, this.y + other.y)
-            }
+        function go(options) {
+            let {
+                speed = 4,
+                enable: {
+                    a: hyperdrive = false,
+                    b: frobnifier = true
+                } = {
+                    a: true,
+                    b: false
+                }
+            } = options;
+            console.log("speed=", speed,
+                "hyperdrive:", hyperdrive,
+                "frobnifier:", frobnifier)
         }
+
+        go({speed: 5})
 
 
     </script>
@@ -37,7 +46,7 @@
 </head>
 <body>
 
-<p>Use a single object literal to create an object that is indistinguishable from a Point instance, without calling the Point constructor.  </p>
+<p></p>
 
 <p>СМОТРИ В КОНСОЛЕ</p>
 

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+
+        function* integers() {
+            for (let i = 0;; i++) yield i
+        }
+
+        function* take(n, iter) {
+//            console.log(iter.next().value);
+//            console.log(iter.next().value);
+//            console.log(iter.next().value);
+//            console.log(iter.next().value);
+
+        }
+
+        for (let elt of take(3, integers()))
+            console.log(elt)
+        // → 0
+        //   1
+        //   2
+
+    </script>
+
+</head>
+<body>
+
+<p>The integers function creates an infinite iterator, that keeps on producing integers forever.</p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+</body>
+</html>
