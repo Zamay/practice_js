@@ -1,5 +1,7 @@
 Задачи по js.
 Задачи с папки ES6 - с сайта http://marijnhaverbeke.nl/talks/es6_falsyvalues2015/exercises/#Point
+Что решил :
+https://github.com/Zamay/practice_js/tree/master/ES6
 
 На данный момент я НЕ решил :
 
