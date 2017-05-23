@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+
+        class Queue {
+            constructor() {
+                this[Symbol.for('arr')] = [];
+            }
+
+            put(elt) {
+                return this[Symbol.for('arr')].push(elt)
+            }
+            take() {
+                return this[Symbol.for('arr')].shift()
+            }
+        }
+
+        let q = new Queue;
+        q.put(1);
+        q.put(2);
+        console.log(q.take());
+        console.log(q.take())
+
+    </script>
+
+</head>
+<body>
+
+<p>Change the Queue class to use a symbol instead of an underscore-prefixed property name for the private content property.</p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+</body>
+</html>

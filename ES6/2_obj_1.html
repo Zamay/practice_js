@@ -24,16 +24,32 @@
 
         class Point {
             constructor(x, y) {
-                this.x = x, this.y = y
+                this.x = x; this.y = y
             }
             add(other) {
                 return new Point(this.x + other.x, this.y + other.y)
             }
         }
 
-        // Как переписать ?!
-        var fakePoint = YOUR_CODE_HERE
+
+        // НЕ сделал
+        var fakePoint = {
+            constructor: function (x, y) {
+                this.x = x;
+                this.y = y;
+            },
+            add: function (other) {
+
+            }
+        };
+
+        let a = fakePoint.constructor(2,4);
+        console.log(a);
+        let b = fakePoint.constructor(3,5);
+        console.log(b);
+        a.add(b)
         console.log(fakePoint instanceof Point)
+
 
     </script>
 

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+
+        class MyMap {
+            constructor(){
+                this.obj = {};
+            }
+            get(key) {
+                return this.obj[key];
+            }
+            set(key, value) {
+                this.obj[key] = value;
+            }
+            delete(key){
+                return this.obj[key];
+            }
+            get size(){
+                return Object.keys(this.obj).length
+            }
+            clear(){
+                return this.obj = {};
+            }
+
+        }
+
+        const names = new MyMap
+        names.set(Array, "the array constructor")
+        names.set(Math, "the math object")
+        console.log(names.get(Array))
+        // → "the array constructor"
+        console.log(names.size)
+//        // → 2
+//        names.delete(Array)
+//        console.log(names.get(Array))
+//        // → undefined
+//        names.clear()
+        console.log(names.get(Math))
+        // → undefined
+
+
+    </script>
+
+</head>
+<body>
+
+<p>Implement your own version of Map, without actually using Map. I know I said this did not exist, but the catch is that you don't have to worry about algorithmic complexity—looking up a value in a big map can be as slow as it needs to be.</p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+</body>
+</html>

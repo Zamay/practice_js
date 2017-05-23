@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+
+        const teamName = "tooling"
+        const people = [{name: "Jennie", role: "senior"},
+            {name: "Ronald", role: "junior"},
+            {name: "Martin", role: "senior"},
+            {name: "Anneli", role: "junior"}]
+
+        let message = `
+                        There are ${people.length} on the ${teamName} team.
+                        Their names are ${people[0].name}, ${people[1].name}, ${people[2].name}, ${people[3].name}.
+                        ${people.length/2} of them have a ${people[0].role} role.
+                       `;
+
+        console.log(message)
+
+    </script>
+
+</head>
+<body>
+
+<p>Given the data in the starting code, use a template string to produce the following string. Make sure the numbers, names, and team name actually come from the data.</p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+</body>
+</html>

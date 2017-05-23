@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+
+        // Generate a random graph
+        const graph = []
+        for (let i = 0; i < 50; i++)
+            graph.push({value: Math.random(), edges: []})
+        for (let i = 0; i < 100; i++) {
+            let from = graph[Math.floor(Math.random() * graph.length)]
+            let to = graph[Math.floor(Math.random() * graph.length)]
+            if (from.edges.indexOf(to) != -1) continue
+            from.edges.push(to)
+        }
+
+
+        // Крутая задача , но не сделал
+        function connectedValue(node, usedNodes) {
+            usedNodes = usedNodes || {};
+            var result = node.value;
+            var nodeIndex = graph.indexOf(node);
+            if (!usedNodes[nodeIndex]) {
+                usedNodes[nodeIndex] = true;
+                for (let i = 0; i < node.edges.length; i++) {
+                    result += connectedValue(node.edges[i], usedNodes);
+                }
+            }
+            return result;
+        }
+
+        console.log(connectedValue(graph[0]));
+        //        console.log(connectedValue(graph[24]))
+        //        console.log(connectedValue(graph[49]))
+
+
+    </script>
+
+</head>
+<body>
+
+<p>Your task is to implement the function connectedValue which, starting at a node, traces through the graph by
+    following edges, summing up the total value of all nodes connected to the start node (including the start node
+    itself).</p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+</body>
+</html>

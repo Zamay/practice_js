@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+
+        // Не понимаю
+
+        function html(...) {
+            // Your code here
+        }
+
+        const mustEscape = '<>&"'
+        console.log(html`You should escape the ${mustEscape.length} characters “${mustEscape}” in HTML`)
+
+        function escapeHTML(string) {
+            return String(string).replace(/"/g, "&quot;").replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;").replace(/&/g, "&amp;")
+        }
+
+
+    </script>
+
+</head>
+<body>
+
+<p>Write a function html that can be used as a template string tag, and produces a string in which all the interpolated pieces are escaped as HTML. Use the supplied escapeHTML function to do the escaping.</p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+</body>
+</html>

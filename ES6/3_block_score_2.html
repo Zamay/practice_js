@@ -28,6 +28,7 @@
 
         }
         Object.defineProperty(account, "password", {
+            configurable: false,
             writable: false
         });
 
@@ -41,7 +42,8 @@
 </head>
 <body>
 
-<p>Does the fact that account is constant mean that we can't update password? Why, or why not? And if not, how could we make it so that we can't?</p>
+<p>Does the fact that account is constant mean that we can't update password? Why, or why not? And if not, how could we
+    make it so that we can't?</p>
 
 <p>СМОТРИ В КОНСОЛЕ</p>
 
