@@ -26,22 +26,26 @@
 
             constructor(name, verb){
                 this.name = name;
-                this.verb = verb || "says";
+                this._verb = verb || "says";
+            }
+
+            set verb(verb){
+                this._verb = verb;
             }
 
             get verb(){
-                return  verb || "says";
+                return  this._verb;
             }
 
             speak(text) {
-                console.log(this.name + " " + verb() + " '" + text + "'")
+                console.log(this.name + " " + this._verb + " '" + text + "'")
             }
         }
 
         class Shouter extends Speaker {
 
-            constructor(name){
-                super(name || "shouts")
+            constructor(name, verb){
+                super(name, verb || 'lalala')
             }
 
             speak(text){
@@ -49,7 +53,10 @@
             }
         }
 
-        new Shouter("Dr. Loudmouth").speak("hello there");
+
+        let user = new Shouter("Dr. Loudmouth").speak("hello there");
+        let user1 = new Shouter("Dr. Loudmouth",'bebebe').speak("hello there");
+        let user2 = new Speaker("Dr. Loudmouth").speak("hello there");
     </script>
 
 </head>
