@@ -3,13 +3,12 @@
 
 На данный момент я НЕ решил :
 
-1)Object literals.1: http://marijnhaverbeke.nl/talks/es6_falsyvalues2015/exercises/#Fake_point
-2)Arrow functions.2: http://marijnhaverbeke.nl/talks/es6_falsyvalues2015/exercises/#Sorted_array
-3)
-4)Spread.1:          http://marijnhaverbeke.nl/talks/es6_falsyvalues2015/exercises/#Spread_out
-5)Template strings.2:http://marijnhaverbeke.nl/talks/es6_falsyvalues2015/exercises/#HTML_templating
-6)Promises:          http://marijnhaverbeke.nl/talks/es6_falsyvalues2015/exercises/#Web_crawling
-7)Iterators & Generator - кроме 2х задач.
+1)Object literals.1: http://marijnhaverbeke.nl/talks/es6_falsyvalues2015/exercises/#Fake_point  <br>
+2)Arrow functions.2: http://marijnhaverbeke.nl/talks/es6_falsyvalues2015/exercises/#Sorted_array    <br>
+4)Spread.1:          http://marijnhaverbeke.nl/talks/es6_falsyvalues2015/exercises/#Spread_out  <br>
+5)Template strings.2:http://marijnhaverbeke.nl/talks/es6_falsyvalues2015/exercises/#HTML_templating <br>
+6)Promises:          http://marijnhaverbeke.nl/talks/es6_falsyvalues2015/exercises/#Web_crawling    <br>
+7)Iterators & Generator - кроме вторых задач.
 
 
 
