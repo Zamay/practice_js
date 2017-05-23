@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 20px;
+            line-height: 25px;
+        }
+
+        body p {
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+
+    <script>
+
+        // Задачи НЕ сделал ((((
+
+        function replace(array, from, to, elements) {
+            array.splice(from, to - from, ...elements)
+        }
+
+        let testArray = [1, 2, 100, 100, 6];
+        replace(testArray, 2, 4, [3, 4, 5]);
+        console.log(testArray);
+
+        // -----
+        function copyReplace(array, from, to, elements) {
+            let arr = array.slice();
+            arr.splice(from, to - from, ...elements);
+            return  arr
+        }
+
+        console.log(copyReplace([1, 2, 100, 200, 6], 2, 4, [3, 4, 5]))
+
+
+        let birdsSeen = [];
+        function recordBirds(time, ...birds) {
+            birdsSeen.push({time, birds: birds})
+        }
+
+        recordBirds(new Date, "sparrow", "robin", "pterodactyl")
+        console.log(birdsSeen[0])
+
+
+    </script>
+
+</head>
+<body>
+
+<p>Simplify these three functions by using the spread syntax.</p>
+
+<p> The first one, replace, replaces part of an array with elements from another array.</p>
+
+<p> The second one, copyReplace, does the same, but creates a new array rather than modifying its argument.</p>
+
+p The third one is used to record a birdwatcher's sightings. It takes first a timestamp (say, a Date), and then any
+number of strings naming birds. It then stores these in the birdsSeen array.</p>
+
+<p>СМОТРИ В КОНСОЛЕ</p>
+
+</body>
+</html>
