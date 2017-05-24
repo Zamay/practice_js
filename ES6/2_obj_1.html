@@ -31,23 +31,12 @@
             }
         }
 
-
-        // НЕ сделал
         var fakePoint = {
-            constructor: function (x, y) {
-                this.x = x;
-                this.y = y;
-            },
-            add: function (other) {
-
-            }
+            __proto__: Point.prototype,
+            x: 10,
+            y: 11
         };
 
-        let a = fakePoint.constructor(2,4);
-        console.log(a);
-        let b = fakePoint.constructor(3,5);
-        console.log(b);
-        a.add(b)
         console.log(fakePoint instanceof Point)
 
 
