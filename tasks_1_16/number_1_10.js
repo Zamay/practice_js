@@ -99,7 +99,7 @@ console.log(test1_5(10, 55, 33));
 // № 7
 
 function bind(fn, context) {
-    return function() { // (*)
+    return function() {
         return fn.apply(context, arguments);
     };
 }
@@ -129,7 +129,7 @@ function filter (arr, fn) {
     var narr = [];
     for(var i=0; i<arr.length; ++i){
         if(fn(arr[i])){
-            narr.push((arr[i]))
+            narr.push(arr[i])
         }
     }
     return narr
@@ -140,10 +140,6 @@ console.log(filter(input, isEven)); // [2, 4, 6]
 // № 10
 
 function count (obj) {
-    var counter = 0;
-    for (var key in obj) {
-        counter++;
-    }
-    return counter;
+    return Object.keys(obj).length;
 }
 
